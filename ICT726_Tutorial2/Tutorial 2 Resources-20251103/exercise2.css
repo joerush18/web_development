@@ -1,0 +1,86 @@
+header, footer {
+  color: white;
+  background-color: #213643;
+}
+nav {
+  background-color: #728B96;
+}
+h1, h2, h3 {
+ font-family: "Trebuchet MS", "Lucida Grande", Tahoma, sans-serif;
+}
+body {
+ font-family: Georgia, Cambria, "Times New Roman", serif;
+}
+
+/* ID Selector */
+#reviews {
+  border-bottom: solid 3pt #213643;
+  color: #ed8030;
+}
+
+/* Class Selector */
+.first {
+  color: #728B96;
+  font-style: italic;
+}
+
+/* Attribute Selector - selects all elements with title attribute */
+[title] {
+  cursor: help;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px dotted blue;
+}
+
+/* Attribute Selector - selects elements with title exactly "Central Park" */
+[title="Central Park"] {
+  cursor: help;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px dotted blue;
+}
+
+/* Attribute Selector - selects elements containing "Central" in title */
+[title*="Central"] {
+  cursor: help;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px dotted blue;
+}
+
+/* Attribute Selector - selects elements starting with "Central" */
+[title^="Central"] {
+  cursor: help;
+  text-decoration: none;
+  padding-bottom: 3px;
+  border-bottom: 2px dotted blue;
+}
+
+/* Pseudo-Class Selectors */
+a:link {
+  font-weight: bold;
+  color: #47B3D7;
+}
+
+a:visited {
+  color: #BB78FF;
+}
+
+a:hover {
+  background-color: #FFFF99;
+}
+
+/* Navigation bar styling */
+nav ul li {
+  list-style: none;
+  display: inline;
+  margin: 1em;
+}
+
+nav {
+  padding: 0.25em;
+}
+
+nav a {
+  padding: 0.25em;
+}
