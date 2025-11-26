@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICT726 Tutorial 4 - Exercise 3</title>
+  <script type="text/javascript">
+    // Purpose of the original code:
+    // matchpass() compares two password fields and only submits the form
+    // if both entered passwords are the same.
+
+    // For this exercise, we create a small login form and validate
+    // the username and password against existing values.
+    function matchLogin() {
+      // existing username and password (you can change these)
+      var validUsername = "student";
+      var validPassword = "password";
+
+      var enteredUsername = document.f1.username.value;
+      var enteredPassword = document.f1.password.value;
+
+      if (enteredUsername === validUsername && enteredPassword === validPassword) {
+        alert("Login successful!");
+        return true; // allow form submission
+      } else {
+        alert("Invalid username or password.");
+        return false; // prevent form submission
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Exercise 3 - Simple Login Form</h1>
+
+  <form name="f1" action="#" onsubmit="return matchLogin()">
+    Username: <input type="text" name="username" /><br/>
+    Password: <input type="password" name="password" /><br/>
+    <input type="submit" value="Login">
+  </form>
+</body>
+</html>
+
+

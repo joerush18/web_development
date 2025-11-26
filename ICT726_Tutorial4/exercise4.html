@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ICT726 Tutorial 4 - Exercise 4</title>
+  <script>
+    // Change background colour when mouse is over the input field
+    function mouseOverEvent() {
+      document.getElementById("input1").style.background = "aqua";
+    }
+
+    // Optional: reset background when mouse leaves the field
+    function mouseOutEvent() {
+      document.getElementById("input1").style.background = "white";
+    }
+  </script>
+</head>
+<body>
+  <h2>Enter something here</h2>
+
+  <input
+    type="text"
+    id="input1"
+    onmouseover="mouseOverEvent()"
+    onmouseout="mouseOutEvent()"
+  />
+</body>
+</html>
+
+
