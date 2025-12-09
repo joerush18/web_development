@@ -8,18 +8,27 @@
   </head>
   <body>
     <!-- Navigation -->
-    <nav class="navbar">
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
       <div class="container">
         <div class="nav-brand">
           <h1>PortfolioBuilder</h1>
         </div>
-        <ul class="nav-menu">
+        <ul class="nav-menu" id="primary-navigation">
           <li><a href="index.html">Home</a></li>
           <li><a href="gallery.html">Templates</a></li>
-          <li><a href="documentation.html" class="active">Guide</a></li>
+          <li>
+            <a href="documentation.html" class="active" aria-current="page"
+              >Guide</a
+            >
+          </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-        <button class="nav-toggle" aria-label="Toggle navigation">
+        <button
+          class="nav-toggle"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="primary-navigation"
+        >
           <span></span>
           <span></span>
           <span></span>
